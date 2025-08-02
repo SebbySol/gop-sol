@@ -1,0 +1,42 @@
+/* Swiper Horizontal Slider Styles */
+.mySwiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.mySwiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Enhanced hover effects for slides */
+.mySwiper .swiper-slide:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth infinite scroll animation */
+.mySwiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mySwiper {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySwiper {
+    padding: 10px 0;
+  }
+}
