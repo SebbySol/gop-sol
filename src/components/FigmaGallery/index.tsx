@@ -6,12 +6,12 @@ import "swiper/css";
 export default function FigmaGallery() {
     return (
         <section className="bg-[#FF5500] pb-35">
-            
-            <div className="bg-black lg:rounded-bl-[600px] pb-50">
+
+            <div className="bg-black lg:rounded-bl-[600px] lg:pb-50 pb-20">
                 <h2 className="text-white text-6xl md:text-8xl font-bold text-center lg:text-right lg:mr-10 mb-15 pt-20">
                     Figma
                 </h2>
-                <div className="w-full lg:ml-65 justify-center items-center">
+                <div className="w-full lg:ml-65">
                     <Swiper
                         modules={[Autoplay]}
                         slidesPerView={3}
@@ -48,13 +48,13 @@ export default function FigmaGallery() {
                         {figmaProjects.map((project, idx) => (
                             <SwiperSlide
                                 key={idx}
-                                className=""
+                                className="flex justify-center items-center"
                             >
-                                <div className="relative group">
+                                <div className="relative group flex justify-center">
                                     <img
                                         src={project.src}
                                         alt={project.alt}
-                                        className="w-[50%] md:w-full h-[250px] sm:h-[400px] md:h-[450px] object-cover rounded-3xl transition-transform duration-300 hover:scale-105 shadow-lg"
+                                        className="w-[80%] sm:w-[60%] md:w-full h-[250px] sm:h-[400px] md:h-[450px] object-cover rounded-3xl transition-transform duration-300 hover:scale-105 shadow-lg"
                                     />
                                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
                                     <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent rounded-b-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">

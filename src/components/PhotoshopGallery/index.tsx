@@ -10,7 +10,7 @@ export default function PhotoshopGallery() {
                 Photoshop
             </h2>
 
-            <div className="w-full max-w-none mx-auto px-4">
+            <div className="w-full max-w-none mx-auto px-4 max-h-[350px] md:max-h-[550px] lg:max-h-none">
                 <Swiper
                     modules={[Autoplay]}
                     slidesPerView={3}
@@ -50,9 +50,9 @@ export default function PhotoshopGallery() {
                                 <img
                                     src={project.src}
                                     alt={project.alt}
-                                    className="w-full h-[350px] sm:h-[400px] md:h-[550px] object-cover rounded-xl transition-transform duration-300 hover:scale-105 shadow-lg"
+                                    className="w-full h-[350px] sm:h-[400px] md:h-[550px] object-cover rounded-xl hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-xl" />
+                                <div className="absolute inset-0 rounded-xl" />
                                 <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent rounded-b-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <p className="text-white text-sm font-medium">{project.alt}</p>
                                 </div>

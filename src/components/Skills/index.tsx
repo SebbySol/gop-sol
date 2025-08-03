@@ -5,7 +5,7 @@ export default function Skills() {
             <section className="bg-black bg-[url('/path/to/your/noise-texture.png')] bg-cover py-20 px-6 md:px-12 lg:px-20 text-white">
                 <div className="mx-[30px]">
                 <div className="grid lg:grid-cols-2 gap-40">
-                    <div className="max-w-3xl justify-self-end">
+                    <div className="max-w-3xl justify-self-end max-sm:w-full">
                             <h2 className="text-3xl md:text-6xl font-bold text-center mb-10">Technical Skills</h2>
                         <div className="grid md:grid-cols-2 gap-[25px]">
                                 {skills.technical.map((item, idx) => (
