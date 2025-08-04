@@ -12,7 +12,7 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ amount: 0.3 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-[40px] lg:text-[90px] md:text-[70px] sm:text-[50px] font-bold text-black leading-tight"
+                        className="text-[40px] lg:text-[70px] md:text-[70px] sm:text-[50px] font-bold text-black leading-tight"
                     >
                         Discover my projects and see the <span className="hidden sm:inline"><br /></span>
                         story of each works.
@@ -24,7 +24,7 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ amount: 0.3 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                        className="bg-black text-white text-3xl px-10 py-5 rounded-r-full lg:rounded-r-none lg:rounded-l-full font-semibold"
+                        className="bg-black text-white 2xl:text-2xl text-xl px-10 py-5 rounded-r-full lg:rounded-r-none lg:rounded-l-full font-semibold"
                     >
                         sebastian
                     </motion.div>
@@ -37,7 +37,7 @@ export default function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ amount: 0.3 }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-                    className="text-white text-xl md:text-2xl lg:text-3xl lg:max-w-[48vw]"
+                    className="text-white text-xl md:text-2xl lg:max-w-[48vw]"
                 >
                     Every layout, interaction, and pixel is thoughtfully designed to create seamless experiences that engage users and bring ideas to life. I focus on usability and visual clarity to deliver solutions that solve problems and elevate brands.
                 </motion.p>
