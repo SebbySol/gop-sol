@@ -1,4 +1,4 @@
-import { figmaProjects } from "../../utility/constants";
+import { projects } from "../../utility/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -46,9 +46,9 @@ export default function FigmaGallery() {
                             },
                         }}
                     >
-                        {figmaProjects.map((project, idx) => (
+                        {projects.figma.map((project, id) => (
                             <SwiperSlide
-                                key={idx}
+                                key={id}
                                 className="flex justify-center items-center"
                             >
                                 <div className="relative group flex justify-center">

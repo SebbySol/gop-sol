@@ -4,96 +4,89 @@ export const projects = {
       id: 1,
       title: "Bring Me The Horizon Poster",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9mZGFhMTk2Zi04NmExLTRlNzMtOWFkOS02YjkxOWVjN2YxYzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vYXNzZXRzL3Jha2stZnJvbnQuanBnIiwiaWF0IjoxNzU0MTIwMzIzLCJleHAiOjE3ODU2NTYzMjN9.UsHFvu9MdSiMDrJslbc_Z9DKnfT7Z2sUDCTl6SD85_Q",
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/photoshop/BMTH.png",
       alt: "Bring Me The Horizon Poster" 
     },
     { 
       id: 2,
       title: "Luna Turns Four Poster",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9mZGFhMTk2Zi04NmExLTRlNzMtOWFkOS02YjkxOWVjN2YxYzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vYXNzZXRzL3Jha2stZnJvbnQuanBnIiwiaWF0IjoxNzU0MTIwMzIzLCJleHAiOjE3ODU2NTYzMjN9.UsHFvu9MdSiMDrJslbc_Z9DKnfT7Z2sUDCTl6SD85_Q",
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/photoshop/luna.png",
       alt: "Luna Turns Four Poster" 
     },
     { 
       id: 3,
       title: "Orocan Poster",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9mZGFhMTk2Zi04NmExLTRlNzMtOWFkOS02YjkxOWVjN2YxYzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vYXNzZXRzL3Jha2stZnJvbnQuanBnIiwiaWF0IjoxNzU0MTIwMzIzLCJleHAiOjE3ODU2NTYzMjN9.UsHFvu9MdSiMDrJslbc_Z9DKnfT7Z2sUDCTl6SD85_Q",
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/photoshop/orocan_sample.jpg",
       alt: "Orocan Poster" 
     },
     { 
       id: 4,
       title: "TQC Poster",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9mZGFhMTk2Zi04NmExLTRlNzMtOWFkOS02YjkxOWVjN2YxYzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vYXNzZXRzL3Jha2stZnJvbnQuanBnIiwiaWF0IjoxNzU0MTIwMzIzLCJleHAiOjE3ODU2NTYzMjN9.UsHFvu9MdSiMDrJslbc_Z9DKnfT7Z2sUDCTl6SD85_Q",
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/photoshop/TICAP_Cross_Guild.png",
       alt: "TQC Poster" 
     },
     { 
       id: 5,
       title: "Strays Poster",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9mZGFhMTk2Zi04NmExLTRlNzMtOWFkOS02YjkxOWVjN2YxYzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vYXNzZXRzL3Jha2stZnJvbnQuanBnIiwiaWF0IjoxNzU0MTIwMzIzLCJleHAiOjE3ODU2NTYzMjN9.UsHFvu9MdSiMDrJslbc_Z9DKnfT7Z2sUDCTl6SD85_Q",
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/photoshop/STRAYS.png",
       alt: "Strays Poster" 
     }
   ],
   figma: [
     { 
       id: 1,
-      title: "Bring Me The Horizon Poster",
+      title: "Harvest2Home",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "Bring Me The Horizon Poster" 
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/figma/harvest.jpg",
+      alt: "Harvest2Home" 
     },
     { 
       id: 2,
-      title: "Luna Turns Four Poster",
+      title: "Rakk",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "Luna Turns Four Poster" 
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/figma/rakk.jpg",
+      alt: "Rakk" 
     },
     { 
       id: 3,
-      title: "Orocan Poster",
+      title: "TQC",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "Orocan Poster" 
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/figma/TQC.jpg",
+      alt: "TQC" 
     },
     { 
       id: 4,
-      title: "TQC Poster",
+      title: "SmartBudgetor",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "TQC Poster" 
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket/figma/payatas.jpg",
+      alt: "SmartBudgetor" 
     },
-    { 
-      id: 5,
-      title: "Strays Poster",
-      description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "Strays Poster" 
-    }
   ],
   illustrator: [
     { 
       id: 1,
-      title: "Bring Me The Horizon Poster",
+      title: "Semaphore Poster",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket//sema.png",
       alt: "Bring Me The Horizon Poster" 
     },
     { 
       id: 2,
-      title: "Luna Turns Four Poster",
+      title: "Glass",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "Luna Turns Four Poster" 
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket//glassed.png",
+      alt: "Glass" 
     },
     { 
       id: 3,
-      title: "Orocan Poster",
+      title: "Black shit",
       description: "",
-      src: "https://qhbpzwjwjaaoebdgkexj.supabase.co/storage/v1/object/sign/portfolio/assets/rakk-front.jpg?...",
-      alt: "Orocan Poster" 
+      src: "https://gfhyywaxbdxpbnczfpys.supabase.co/storage/v1/object/public/chumbucket//neww.png",
+      alt: "Black shit" 
     },
     { 
       id: 4,

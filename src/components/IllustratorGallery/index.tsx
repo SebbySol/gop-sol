@@ -1,4 +1,4 @@
-import { illustratorProjects } from "../../utility/constants";
+import { projects } from "../../utility/data";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -35,7 +35,7 @@ export default function IllustratorGallery() {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
-          {illustratorProjects.map((project) => (
+          {projects.illustrator.map((project) => (
             <SwiperSlide key={project.id} style={{ width: '280px' }}>
               <img
                 src={project.src}
@@ -47,11 +47,29 @@ export default function IllustratorGallery() {
         </Swiper>
       </div>
 
-      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 h-[950px]">
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 h-auto">
         <div className="flex flex-col gap-4">
-          <div className="bg-black w-full h-[50%]" />
-          <div className="bg-black w-full h-[25%]" />
-          <div className="bg-black w-full h-[25%]" />
+          <div className="bg-black w-full h-auto">
+            <img
+              src={projects.illustrator[0].src}
+              alt={projects.illustrator[0].alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="bg-black w-full h-auto">
+            <img
+              src={projects.illustrator[1].src}
+              alt={projects.illustrator[1].alt}
+              className="w-full h-full object-fill"
+            />
+          </div>
+          <div className="bg-black w-full h-auto"> 
+            <img
+              src={projects.illustrator[2].src}
+              alt={projects.illustrator[2].alt}
+              className="w-full h-full object-fill"
+            />
+          </div>
         </div>
 
         <div className="flex flex-col gap-4">
