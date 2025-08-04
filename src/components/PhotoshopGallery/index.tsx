@@ -7,7 +7,7 @@ import "swiper/css";
 export default function PhotoshopGallery() {
     return (
         <section className="bg-[#ff4f00] py-20 px-4 lg:min-h-screen">
-            <h2 className="text-black text-5xl md:text-9xl font-bold text-center mb-15 lg:mb-32">
+            <h2 className="text-black text-5xl md:text-7xl 2xl:text-8xl font-bold text-center mb-15 lg:mb-32">
                 Photoshop
             </h2>
 

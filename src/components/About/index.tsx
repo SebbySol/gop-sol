@@ -18,7 +18,7 @@ export default function About() {
                         story of each works.
                     </motion.h2>
                 </div>
-                <div className="flex-shrink-0 self-start lg:self-start md:mt-15">
+                <div className="flex-shrink-0 self-start lg:self-start md:mt-15 pt-10">
                     <motion.div 
                         initial={{ opacity: 0, x: 100 }}
                         whileInView={{ opacity: 1, x: 0 }}

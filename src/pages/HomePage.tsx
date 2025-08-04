@@ -5,6 +5,7 @@ import IllustratorGallery from '../components/IllustratorGallery';
 import FigmaGallery from '../components/FigmaGallery';
 import { useVantaFog } from '../hooks/useVantaFog';
 import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 
 export default function HomePage() {
   const vantaRef = useVantaFog();
@@ -24,6 +25,7 @@ export default function HomePage() {
         <PhotoshopGallery />
         <FigmaGallery />
         <IllustratorGallery />
+        <Footer />
       </div>
     </div>
   );

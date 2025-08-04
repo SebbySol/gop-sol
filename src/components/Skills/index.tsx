@@ -3,7 +3,7 @@ import { skills } from '../../utility/constants';
 export default function Skills() {
     return (
         <section className="bg-black bg-[url('/path/to/your/noise-texture.png')] bg-cover py-20 px-6 md:px-12 lg:px-20 text-white">
-            <div className="mx-[30px]">
+            <div className="mx-[30px] py-15">
                 <div className="grid lg:grid-cols-2 gap-40">
                     <div className="max-w-3xl justify-self-end max-sm:w-full">
                         <h2 className="text-4xl xl:text-5xl font-bold text-center mb-10">

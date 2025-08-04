@@ -9,7 +9,7 @@ export default function FigmaGallery() {
         <section className="bg-[#FF5500] pb-35">
 
             <div className="bg-black lg:rounded-bl-[600px] lg:pb-50 pb-20">
-                <h2 className="text-white text-6xl md:text-8xl font-bold text-center lg:text-right lg:mr-10 mb-15 pt-20">
+                <h2 className="text-white text-6xl md:text-7xl font-bold text-center lg:text-right lg:mr-10 mb-15 pt-20 pb-5">
                     Figma
                 </h2>
                 <div className="w-full lg:ml-65">
