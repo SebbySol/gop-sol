@@ -1,27 +1,42 @@
 import { skills } from '../../utility/constants';
+import { motion } from 'framer-motion';
 
 export default function Skills() {
     return (
-            <section className="bg-black bg-[url('/path/to/your/noise-texture.png')] bg-cover py-20 px-6 md:px-12 lg:px-20 text-white">
-                <div className="mx-[30px]">
+        <section className="bg-black bg-[url('/path/to/your/noise-texture.png')] bg-cover py-20 px-6 md:px-12 lg:px-20 text-white">
+            <div className="mx-[30px]">
                 <div className="grid lg:grid-cols-2 gap-40">
                     <div className="max-w-3xl justify-self-end max-sm:w-full">
-                            <h2 className="text-3xl md:text-6xl font-bold text-center mb-10">Technical Skills</h2>
+                        <motion.h2
+                            initial={{ opacity: 0, y: -100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ amount: 0.3 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="text-3xl md:text-6xl font-bold text-center mb-10">
+                            Technical Skills
+                        </motion.h2>
                         <div className="grid md:grid-cols-2 gap-[25px]">
-                                {skills.technical.map((item, idx) => (
-                                    <div
-                                        key={idx}
-                                        className="bg-[#111111] rounded-xl p-[20px] border border-gray-700"
-                                    >
-                                        <h3 className="text-[#FF5500] font-semibold text-[1.7rem]">{item.title}</h3>
-                                        <p className="text-[1rem] text-gray-300 mb-[10px]">{item.desc}</p>
-                                    </div>
-                                ))}
-                            </div>
+                            {skills.technical.map((item, idx) => (
+                                <div
+                                    key={idx}
+                                    className="bg-[#111111] rounded-xl p-[20px] border border-gray-700"
+                                >
+                                    <h3 className="text-[#FF5500] font-semibold text-[1.7rem]">{item.title}</h3>
+                                    <p className="text-[1rem] text-gray-300 mb-[10px]">{item.desc}</p>
+                                </div>
+                            ))}
                         </div>
+                    </div>
 
                     <div className="max-w-3xl">
-                        <h2 className="text-3xl md:text-6xl font-bold text-center mb-10">Soft Skills</h2>
+                        <motion.h2
+                            initial={{ opacity: 0, y: -100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ amount: 0.3 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="text-3xl md:text-6xl font-bold text-center mb-10">
+                            Soft Skills
+                        </motion.h2>
                         <div className="grid md:grid-cols-2 gap-[25px]">
                             {skills.soft.map((item, idx) => (
                                 <div
@@ -34,8 +49,8 @@ export default function Skills() {
                             ))}
                         </div>
                     </div>
-                    </div>
                 </div>
+            </div>
         </section>
     );
 }

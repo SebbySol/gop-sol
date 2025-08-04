@@ -1,14 +1,21 @@
-import { photoshopProjects } from "../../utility/constants";
+import { projects } from "../../utility/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { motion } from 'framer-motion';
+
 import "swiper/css";
 
 export default function PhotoshopGallery() {
     return (
         <section className="bg-[#ff4f00] py-20 px-4 lg:min-h-screen">
-            <h2 className="text-black text-5xl md:text-9xl font-bold text-center mb-15 lg:mb-32">
+            <motion.h2
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-black text-5xl md:text-9xl font-bold text-center mb-15 lg:mb-32">
                 Photoshop
-            </h2>
+            </motion.h2>
 
             <div className="w-full max-w-none mx-auto px-4 max-h-[350px] md:max-h-[550px] lg:max-h-none">
                 <Swiper
@@ -41,9 +48,9 @@ export default function PhotoshopGallery() {
                         },
                     }}
                 >
-                    {photoshopProjects.map((project, idx) => (
+                    {projects.photoshop.map((project, id) => (
                         <SwiperSlide
-                            key={idx}
+                            key={id}
                             className="rounded-xl overflow-hidden"
                         >
                             <div className="relative group space-y-50">

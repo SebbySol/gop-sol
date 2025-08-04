@@ -1,6 +1,8 @@
 import { figmaProjects } from "../../utility/constants";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { motion } from 'framer-motion';
+
 import "swiper/css";
 
 export default function FigmaGallery() {
@@ -8,9 +10,14 @@ export default function FigmaGallery() {
         <section className="bg-[#FF5500] pb-35">
 
             <div className="bg-black lg:rounded-bl-[600px] lg:pb-50 pb-20">
-                <h2 className="text-white text-6xl md:text-8xl font-bold text-center lg:text-right lg:mr-10 mb-15 pt-20">
+                <motion.h2
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ amount: 0.3 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+                    className="text-white text-6xl md:text-8xl font-bold text-center lg:text-right lg:mr-10 mb-15 pt-20">
                     Figma
-                </h2>
+                </motion.h2>
                 <div className="w-full lg:ml-65">
                     <Swiper
                         modules={[Autoplay]}

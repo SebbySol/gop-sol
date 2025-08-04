@@ -1,6 +1,7 @@
 import { illustratorProjects } from "../../utility/constants";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { motion } from "framer-motion";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -9,10 +10,23 @@ export default function IllustratorGallery() {
   return (
     <section className="bg-[#FF5500] px-6 py-10">
       <div className="flex justify-between items-end mb-8">
-        <h2 className="text-4xl md:text-9xl font-bold text-black mb-5">Illustrator</h2>
-        <a href="#" className="text-black text-xl text-sm hover:underline">
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-4xl md:text-9xl font-bold text-black mb-5">
+          Illustrator
+        </motion.h2>
+        <motion.a
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          href="#"
+          className="text-black text-xl text-sm hover:underline"
+        >
           View More
-        </a>
+        </motion.a>
       </div>
 
       <div className="block sm:hidden">
@@ -34,8 +48,8 @@ export default function IllustratorGallery() {
         >
           {illustratorProjects.map((project) => (
             <SwiperSlide key={project.id} style={{ width: '280px' }}>
-              <img 
-                src={project.src} 
+              <img
+                src={project.src}
                 alt={project.alt}
                 className="w-full h-[400px] object-cover rounded-3xl shadow-lg"
               />
