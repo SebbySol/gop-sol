@@ -12,7 +12,7 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ amount: 0.3 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-[40px] lg:text-[70px] md:text-[70px] sm:text-[50px] font-bold text-black leading-tight"
+                        className="text-[40px] lg:text-[70px] md:text-[70px] sm:text-[50px] font-bold text-black leading-tight pt-20"
                     >
                         Discover my projects and see the <span className="hidden sm:inline"><br /></span>
                         story of each works.

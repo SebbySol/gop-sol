@@ -1,7 +1,6 @@
 import { illustratorProjects } from "../../utility/constants";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
-import { motion } from "framer-motion";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -10,23 +9,13 @@ export default function IllustratorGallery() {
   return (
     <section className="bg-[#FF5500] px-6 py-10">
       <div className="flex justify-between items-end mb-8">
-        <motion.h2
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl md:text-9xl font-bold text-black mb-5">
+        <h2 className="text-4xl md:text-9xl font-bold text-black mb-5">
           Illustrator
-        </motion.h2>
-        <motion.a
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          href="#"
-          className="text-black text-xl text-sm hover:underline"
+        </h2>
+        <a className="text-black text-xl text-sm hover:underline"
         >
           View More
-        </motion.a>
+        </a>
       </div>
 
       <div className="block sm:hidden">
@@ -58,7 +47,6 @@ export default function IllustratorGallery() {
         </Swiper>
       </div>
 
-      {/* Medium and larger screens - Grid Layout */}
       <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 h-[950px]">
         <div className="flex flex-col gap-4">
           <div className="bg-black w-full h-[50%]" />

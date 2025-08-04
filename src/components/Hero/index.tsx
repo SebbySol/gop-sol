@@ -23,7 +23,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="bg-orange-500 text-white font-semibold py-6 px-12 2xl:py-4 2xl:px-8 rounded-full shadow-md hover:bg-orange-600 text-xl transition-colors duration-300 max-sm:hidden"
+          className="bg-orange-500 text-white font-semibold py-3 px-6 xl:py-4 xl:px-6 2xl:py-4 2xl:px-8 rounded-full shadow-md hover:bg-orange-600 text-xl transition-colors duration-300 max-sm:hidden"
         >
           Let's Talk
         </motion.button>
@@ -33,7 +33,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2, ease: "easeInOut" }}
           onClick={toggleMenu}
-          className="bg-black border-2 border-white text-white flex items-center gap-2 py-3 px-6 2xl:py-4 2xl:px-8 rounded-full text-xl hover:bg-white hover:text-black transition-all duration-300"
+          className="bg-black border-2 border-white text-white flex items-center gap-2 py-3 px-6 xl:py-4 xl:px-6 2xl:py-4 2xl:px-8 rounded-full text-xl hover:bg-white hover:text-black transition-all duration-300"
         >
           {isMenuOpen ? "Close" : "Menu"}
           {isMenuOpen ? <X size={30} /> : <Menu size={30} />}

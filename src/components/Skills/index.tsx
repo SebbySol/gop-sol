@@ -1,5 +1,4 @@
 import { skills } from '../../utility/constants';
-import { motion } from 'framer-motion';
 
 export default function Skills() {
     return (
@@ -7,21 +6,16 @@ export default function Skills() {
             <div className="mx-[30px]">
                 <div className="grid lg:grid-cols-2 gap-40">
                     <div className="max-w-3xl justify-self-end max-sm:w-full">
-                        <motion.h2
-                            initial={{ opacity: 0, y: -100 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ amount: 0.3 }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-3xl md:text-6xl font-bold text-center mb-10">
+                        <h2 className="text-4xl xl:text-5xl font-bold text-center mb-10">
                             Technical Skills
-                        </motion.h2>
+                        </h2>
                         <div className="grid md:grid-cols-2 gap-[25px]">
                             {skills.technical.map((item, idx) => (
                                 <div
                                     key={idx}
-                                    className="bg-[#111111] rounded-xl p-[20px] border border-gray-700"
+                                    className="bg-[#111111] rounded-xl p-[20px] border border-gray-700 lg:min-h-[200px]"
                                 >
-                                    <h3 className="text-[#FF5500] font-semibold text-[1.7rem]">{item.title}</h3>
+                                    <h3 className="text-[#FF5500] font-semibold text-[0.8rem] lg:text-[1rem] xl:text-[1.7rem]">{item.title}</h3>
                                     <p className="text-[1rem] text-gray-300 mb-[10px]">{item.desc}</p>
                                 </div>
                             ))}
@@ -29,21 +23,16 @@ export default function Skills() {
                     </div>
 
                     <div className="max-w-3xl">
-                        <motion.h2
-                            initial={{ opacity: 0, y: -100 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ amount: 0.3 }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="text-3xl md:text-6xl font-bold text-center mb-10">
+                        <h2 className="lg:text-4xl xl:text-5xl md:text-6xl font-bold text-center mb-10">
                             Soft Skills
-                        </motion.h2>
+                        </h2>
                         <div className="grid md:grid-cols-2 gap-[25px]">
                             {skills.soft.map((item, idx) => (
                                 <div
                                     key={idx}
-                                    className="bg-[#111111] rounded-xl p-[20px] border border-gray-700"
+                                    className="bg-[#111111] rounded-xl p-[20px] border border-gray-700 lg:min-h-[200px]"
                                 >
-                                    <h3 className="text-[#FF5500] font-semibold text-[1.7rem]">{item.title}</h3>
+                                    <h3 className="text-[#FF5500] font-semibold text-[0.8rem] lg:text-[1rem] xl:text-[1.7rem]">{item.title}</h3>
                                     <p className="text-[1rem] text-gray-300 mb-[10px]">{item.desc}</p>
                                 </div>
                             ))}
