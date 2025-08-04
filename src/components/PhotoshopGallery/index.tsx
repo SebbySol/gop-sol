@@ -46,7 +46,7 @@ export default function PhotoshopGallery() {
                         },
                         1500: {
                             slidesPerView: 4,
-                            spaceBetween: 65,
+                            spaceBetween: 45,
                         },
                     }}
                 >
@@ -59,7 +59,7 @@ export default function PhotoshopGallery() {
                                 <img
                                     src={project.src}
                                     alt={project.alt}
-                                    className="w-full h-[350px] sm:h-[400px] md:h-[700px] object-fll rounded-xl hover:scale-105"
+                                    className="w-full h-[350px] sm:h-[400px] lg:h-[480px] xl:h-[510px] object-fll rounded-xl hover:scale-105"
                                 />
                                 <div className="absolute inset-0 rounded-xl" />
                                 <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent rounded-b-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
