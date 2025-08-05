@@ -1,10 +1,26 @@
 import { projects } from "../../utility/data";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import ProjectModal from "../common/modals/ProjectModal";
 
+import type { Project } from "../../utility/data";
 import "swiper/css";
 
 export default function PhotoshopGallery() {
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const openModal = (project: Project) => {
+      setSelectedProject(project);
+      setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedProject(null);
+      };
+    
     return (
         <section className="bg-[#ff4f00] py-20 px-4 lg:min-h-screen">
             <h2 className="text-black text-5xl md:text-7xl 2xl:text-8xl font-bold text-center mb-15 lg:mb-32">
@@ -53,6 +69,7 @@ export default function PhotoshopGallery() {
                     {projects.photoshop.map((project, id) => (
                         <SwiperSlide
                             key={id}
+                            onClick={ () => openModal(project)}
                             className="rounded-xl overflow-hidden"
                         >
                             <div className="relative group space-y-50">
@@ -70,6 +87,11 @@ export default function PhotoshopGallery() {
                     ))}
                 </Swiper>
             </div>
+            <ProjectModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                project={selectedProject}
+            />
         </section>
     );
 }

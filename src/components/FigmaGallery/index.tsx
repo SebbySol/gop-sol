@@ -1,10 +1,26 @@
+import { useState } from "react";
 import { projects } from "../../utility/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import ProjectModal from "../common/modals/ProjectModal";
 
+import type { Project } from "../../utility/data";
 import "swiper/css";
 
 export default function FigmaGallery() {
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const openModal = (project: Project) => {
+      setSelectedProject(project);
+      setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedProject(null);
+      };
+
     return (
         <section className="bg-[#FF5500] lg:pb-35">
 
@@ -49,6 +65,7 @@ export default function FigmaGallery() {
                         {projects.figma.map((project, id) => (
                             <SwiperSlide
                                 key={id}
+                                onClick={ () => openModal(project)}
                                 className="flex justify-center items-center"
                             >
                                 <div className="relative group flex justify-center">
@@ -67,6 +84,12 @@ export default function FigmaGallery() {
                     </Swiper>
                 </div>
             </div>
+
+            <ProjectModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                project={selectedProject}
+            />
         </section>
     );
 }

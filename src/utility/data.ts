@@ -1,4 +1,16 @@
-export const projects = {
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  src: string;
+  alt: string;
+}
+
+export const projects: {
+  photoshop: Project[];
+  figma: Project[];
+  illustrator: Project[];
+} = {
   photoshop: [
     { 
       id: 1,
